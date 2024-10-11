@@ -1,0 +1,39 @@
+@{
+    ViewData["Title"] = "Adding New Book";
+}
+
+<h2 class="text-center my-4">Book List</h2>
+
+<div class="row mb-3">
+    <div class="col-md-12 text-right">
+        <a asp-action="Create" asp-controller="Book" class="btn btn-success btn-lg">
+            <i class="fas fa-plus">Create New Book</i> 
+        </a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Book Title</th>
+                        <th>Author Name</th>
+                        <th>ISBN</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Title</td>
+                            <td>@item.Author</td>
+                            <td>@item.ISBN</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

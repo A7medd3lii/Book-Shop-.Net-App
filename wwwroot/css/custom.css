@@ -1,0 +1,59 @@
+/* Center the form container and style it */
+.form-container {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-weight: bolder;
+    font-style: oblique;
+    color: #007bff;
+}
+
+/* Style form labels and inputs */
+.form-container label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Merge the buttons at the bottom and center them */
+.form-container .btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-group .btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.btn-save {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-back {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
