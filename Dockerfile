@@ -17,5 +17,8 @@ WORKDIR /app
 # Copy the compiled files from the build stage to the runtime stage
 COPY --from=build /app/out .
 
+# Expose port 8080
+EXPOSE 8080
+
 # Set the entry point for the application
-ENTRYPOINT ["dotnet", "Program.cs.dll"]
+ENTRYPOINT ["dotnet", "BookShop.dll"]
